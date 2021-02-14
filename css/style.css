@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
 
-
-* {
-    box-sizing: border-box;
-    
+ul {
+    margin: 0;
+    padding: 0;
 }
 
 h1, h2, h3, h4 {
@@ -20,10 +19,8 @@ h1, h2, h3, h4 {
 
 nav .menu {
     width: 100%;
-   
     list-style: none;
-    
-    font-family: Montserrat sans-serif;
+     font-family: Montserrat sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -39,14 +36,9 @@ nav .menu {
 nav .menu .menu-item {
     display: block;
     border: 1px solid #fff;
-    padding: 13px 115px 13px 115px;
+    padding: 13px 0;
 }
-nav .menu .menu-item:first-child {
-    border-left: none;
-}
-nav .menu .menu-item:last-child {
-    border-right: none;
-}
+
 
 .top-menu {
     margin-top: 50px;
@@ -94,7 +86,7 @@ nav .menu .menu-item:last-child {
 }
 .descr {
     margin: auto;
-   padding: 0 190px;
+   
     border: 2px solid #fff;
    
 
@@ -116,14 +108,16 @@ nav .menu .menu-item:last-child {
     color:#fff;
 }
 .descr-content {
-  margin-top: 40px; 
-font-family: Montserrat sans-serif;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 24px;
-text-align: center;
-color:#fff;
+    margin-top: 40px;
+    padding: 0 100px; 
+    font-family: Montserrat sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    color:#fff;
+
 
 
 }
@@ -215,14 +209,14 @@ color:#fff;
     width: 490px;
     text-align: center;
     color: #fff;
-    
+    font-size: 36px;
     margin: -25px auto 0;
     background-color: #282828;
 
 }
 .registration_descr {
     color: #fff;
-   margin: 40px 285px;
+  padding: 40px 100px;
     text-align: center;
 
 }
@@ -240,20 +234,20 @@ color:#fff;
     border-bottom: 1px solid #fff;
     
 }
-.registration .form input:first-child {
+/* .registration .form input:first-child {
     margin-right: 28px;
-}
-.registration .form input:last-child {
+} */
+.registration .form .form-adress  {
     display: block;
-    width: 540px;
+    width: 95%;
     height: 30px;
-    margin-top: 40px;
-    margin-right: 0;
+   
+   
 }
 
 .registration_btn {
     display: block;
-    width: 541px;
+    width: 50%;
     height: 50px;
     margin:50px auto 80px;
     padding: 15px 30px;
@@ -263,3 +257,90 @@ color:#fff;
     text-transform: uppercase;
   
 }
+
+
+
+@media (max-width:1400px) {
+  
+    .top-menu a, .adress, .menu-item  {
+        font-size: 13px;
+    }
+ .menu-item{
+     padding: 13px 0;
+ }
+ nav .menu .menu-item:first-child {
+    border-left: none;
+}
+nav .menu .menu-item:last-child {
+    border-right: none;
+}
+.registration .form .form-adress {
+    margin: 40px auto 0;
+}
+
+    }
+
+
+    @media  (max-width:990px) {
+        .new_collection_btn {
+            display: block;
+            margin: 0 auto 50px;
+
+        } 
+        .registration .form .form-adress {
+            margin: 40px auto 0;
+        }
+    }
+
+    @media  (max-width:767px){
+        nav .menu .menu-item {
+            font-size: 20px;
+            border:none;
+        }
+        .descr-content {
+            padding: 0 20px;
+        }
+        .form input {
+           
+           display: block;
+           margin-top: 20px;
+        }
+        .form-adress {
+            margin: auto;
+        }
+        .form br {
+            display: none;
+        }
+    }
+
+    @media (max-width:575px) {
+        h2 {
+            font-size: 30px;
+        } 
+        .promo {
+            height: 100vh;
+        }
+        .registration_header {
+            width: 80%;
+            font-size: 24px;
+        }
+        .descr-content {
+            padding: 0 20px;
+        }
+        .registration_descr {
+            padding: 0 20px;
+        }
+        .form input {
+           
+            display: block;
+            margin-top: 20px;
+         }
+         .form-adress {
+             margin: auto;
+         }
+         .form br {
+             display: none;
+         }
+    }
+
+
